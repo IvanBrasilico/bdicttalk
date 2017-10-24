@@ -1,4 +1,5 @@
-# A Dict configuration that maps conversations and actions
+# Maps a dict configuration into conversations and actions
+
 To map a sequence of commands/words and parameters, like command line interfaces or chats, in a flow or through an action
 
 Actually implemented a Restful API mapping
