@@ -1,4 +1,6 @@
-# Maps a dict configuration into conversations and actions
+[![Build Status](https://travis-ci.org/IvanBrasilico/bcontext.svg?branch=master)](https://travis-ci.org/IvanBrasilico/bcontext)
+
+## Maps a dict configuration into conversations and actions
 
 To map a sequence of commands/words and parameters, like command line interfaces or chats, in a flow or through an action
 
@@ -6,10 +8,8 @@ Actual implementation allows a Restful API mapping
 
 For use in text interfaces and in chatbots
 
-# Also a Bottery Extension - Context and flow management for your bots views - no code - simple JSON configuration
+## Also a Bottery Extension - Context and flow management for your bots views - no code - simple JSON configuration
 :battery: Bottery - a framework for building bots
-
-[![Build Status](https://travis-ci.org/IvanBrasilico/bcontext.svg?branch=master)](https://travis-ci.org/IvanBrasilico/bcontext)
 
 
 ```python
