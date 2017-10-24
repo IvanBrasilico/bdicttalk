@@ -2,7 +2,7 @@
 
 To map a sequence of commands/words and parameters, like command line interfaces or chats, in a flow or through an action
 
-Actually implementation allows a Restful API mapping
+Actual implementation allows a Restful API mapping
 
 For use in text interfaces and in chatbots
 
