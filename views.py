@@ -1,26 +1,9 @@
 '''Custom views just for show example of Usage'''
 import json
 
-from botteryext.dicttalk.cli_talker import talker
-from botteryext.dicttalk.service_binder import RESTWaiter
-import rules
-
+from botteryext.dicttalk.views import interactive_dict_view
 from restapp import ch
-
-waiter = RESTWaiter()
-
-URL_APP = 'http://brasilico.pythonanywhere.com/'
-STATUS = ['OK', 'Divergente', 'Sem Lacre']
-END_HOOK_LIST = ['fim', 'end', 'exit', 'sair']
-
-
-def two_tokens(text):
-    '''Receives a text string, splits on first space, return
-    first word of list/original sentence and the rest of the sentence
-    '''
-    lista = text.split(' ')
-    return lista[0], " ".join(lista[1:])
-
+import rules
 
 def help_text(message):
     '''Retorna a lista de Patterns/ disponíveis'''
@@ -45,11 +28,14 @@ def flask_restless_view(message):
 	if command:
 		return command
 	
+	response = responses['response']
+	error = responses['error']
+	status_code = responses['status_code']
 	if error is not None:
 		print('Erro:', error, status_code)
-		response = clever_json2md(response)
-	else:
 		response = clever_json2md(error)
+	else:
+		response = clever_json2md(response)
 	return json.dumps(response)
 	
 def clever_json2md(response):
