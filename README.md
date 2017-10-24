@@ -1,17 +1,15 @@
-[![Build Status](https://travis-ci.org/IvanBrasilico/bcontext.svg?branch=master)](https://travis-ci.org/IvanBrasilico/bcontext)
+[![Build Status](https://travis-ci.org/IvanBrasilico/bdicttalk.svg?branch=master)](https://travis-ci.org/IvanBrasilico/bdicttalk)
 
 ## Maps a dict configuration into conversations and actions
 
-To map a sequence of commands/words and parameters, like command line interfaces or chats, in a flow or through an action
+Classes to map a sequence of commands/words and parameters, like command line interfaces or chats, in a flow or through an action. Actual implementation allows a Restful API mapping
 
-Actual implementation allows a Restful API mapping
-
-For use in text interfaces and in chatbots
+For use in text interfaces and in chatbots. Classes for bottery integration provided.
 
 ## Also a Bottery Extension - Context and flow management for your bots views - no code - simple JSON configuration
-:battery: Bottery - a framework for building bots
+:battery: [Bottery](https://github.com/rougeth/bottery/)  - a framework for building bots
 
-
+EXAMPLE
 ```python
 # soon
 ```
@@ -24,9 +22,9 @@ The complete example is packaged within this repository. The extension could man
 
 
 ## Usage
-Just import it on a project. 
+Just import it on a project. Refer to examples and tests for more information.
 
-REFER to examples and tests for more information
+Bottery project example:
 
 ```python
 # On app main file
