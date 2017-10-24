@@ -1,4 +1,5 @@
-from botteryext.binput.patterns import HangUserPattern
+import botteryext.bdicttalk.localizations
+from botteryext.bdicttalk.patterns import HangUserPattern
 
 
 def test_inputhandler():

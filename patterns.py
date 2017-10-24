@@ -1,7 +1,7 @@
 '''Configuration of the routes, or vocabulary of the bot'''
 from restapp import ch
 from bottery.conf.patterns import Pattern, DefaultPattern
-from botteryext.dicttalk.patterns import HangUserPattern
+from botteryext.dicttalk.patterns import FunctionPattern, HangUserPattern
 from botteryext.dicttalk.views import first_word
 from bottery.views import pong
 from views import flask_restless_view, help_text, say_help

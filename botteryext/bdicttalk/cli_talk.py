@@ -7,6 +7,7 @@ For rule-based bots that needs to interact with an API or a DataBase
 import shlex
 import sys
 
+
 def locate_next(words, rules, level=1):
     '''Recursively process the rule chain against words until
     key 'resource' is find OR words ends
@@ -42,7 +43,7 @@ def locate_next(words, rules, level=1):
         print(_('Atribute error. Possibly misconfiguration of rules:'),
               sys.exc_info()[0])
         raise
-    except:
+    except Exception:
         print(_('Unexpected error:'), sys.exc_info()[0])
         raise
 

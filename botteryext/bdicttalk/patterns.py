@@ -1,5 +1,13 @@
-'''Patterns needed for the behavior of Extension'''
-from bottery.conf.patterns import Pattern, DefaultPattern
+'''Collection of new Patterns needed on context of extension'''
+from bottery.conf.patterns import DefaultPattern, Pattern
+
+
+def first_word(pattern, text):
+    words = text.split(' ')
+    if words:
+        return words[0] == pattern
+    return False
+
 
 class FunctionPattern(Pattern):
     '''Allows check to be made by an user-defined function'''
@@ -12,8 +20,8 @@ class FunctionPattern(Pattern):
 
     def check(self, message):
         if self.function(self.pattern, message.text):
-		    return self.view
-		return False
+            return self.view
+        return False
 
 
 class HangUserPattern(DefaultPattern):
@@ -38,4 +46,3 @@ class HangUserPattern(DefaultPattern):
         if message.user.id in self.hanged_users:
             return self.view
         return False
-
