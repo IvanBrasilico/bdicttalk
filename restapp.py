@@ -2,8 +2,8 @@ import sys
 import logging.config
 from bottery.app import App
 from bottery.log import DEFAULT_LOGGING
-from botteryext.dicttalk.contexthandler import ContextHandler
-import botteryext.dicttalk.localizations
+from botteryext.bdicttalk.contexthandler import ContextHandler
+import botteryext.bdicttalk.localizations
 
 
 app = App()

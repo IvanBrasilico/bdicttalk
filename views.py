@@ -1,9 +1,10 @@
 '''Custom views just for show example of Usage'''
 import json
 
-from botteryext.dicttalk.views import interactive_dict_view
+from botteryext.bdicttalk.views import interactive_dict_view
 from restapp import ch
-import rules
+from rules import RULES
+MYRULES = RULES['rules']
 
 
 def help_text(message):
@@ -23,10 +24,11 @@ def say_help(message):
 
 
 def flask_restless_view(message):
-    responses = interactive_dict_view(message, rules.RULES_FLASK, ch)
-    command = responses.get['command']
+    responses = interactive_dict_view(message, MYRULES, ch)
+    command = responses.get('command')
     if command:
-        return command
+        print(command)
+        return json.dumps(command)
 
     response = responses['response']
     error = responses['error']
@@ -36,6 +38,7 @@ def flask_restless_view(message):
         response = clever_json2md(error)
     else:
         response = clever_json2md(response)
+    print(response)
     return json.dumps(response)
 
 

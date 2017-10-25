@@ -1,0 +1,66 @@
+{
+    "pattern_list": "person",
+    "rules": {
+        "person": {
+            "insert": {
+                "type": "json_api",
+                "params": [
+                    {
+                        "name": "name",
+                        "required": true
+                    },
+                    {
+                        "name": "birth_date",
+                        "required": true
+                    }
+                ],
+                "resource": "http://localhost:5000/api/person",
+                "method": "POST"
+            },
+            "update": {
+                "type": "json_api",
+                "params": [
+                    {
+                        "name": "pk",
+                        "required": true
+                    },
+                    {
+                        "name": "name",
+                        "required": true
+                    }
+                ],
+                "resource": "http://localhost:5000/api/person",
+                "method": "PUT"
+            },
+            "view": {
+                "type": "json_api",
+                "params": [
+                    {
+                        "name": "pk",
+                        "required": true
+                    }
+                ],
+                "resource": "http://localhost:5000/api/person",
+                "method": "GET"
+            },
+            "_message": "Enter command: ",
+            "list": {
+                "type": "json_api",
+                "params": null,
+                "resource": "http://localhost:5000/api/person",
+                "method": "GET"
+            },
+            "delete": {
+                "type": "json_api",
+                "params": [
+                    {
+                        "name": "pk",
+                        "required": true
+                    }
+                ],
+                "resource": "http://localhost:5000/api/person",
+                "method": "DELETE"
+            }
+        }
+    }
+}
