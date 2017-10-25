@@ -11,7 +11,7 @@ For use in text interfaces and in chatbots. Classes for bottery integration prov
 
 EXAMPLES:
 
-rules - example of configuration. Maps flask-restless quickstart example
+rules.py - example of configuration. Maps flask-restless quickstart example
 
 cliapp.py - A simple command line application to interact with rules. With json argument will interact with quickstart Restful API if it is running
 
