@@ -12,11 +12,11 @@ PATTERN_LIST = RULES['pattern_list']
 
 hang_user_pattern = HangUserPattern(flask_restless_view)
 
-ch.set_hang(hang_user_pattern, PATTERN_LIST)
+ch.set_hang(hang_user_pattern, PATTERN_LIST[0])
 
 patterns = [
     hang_user_pattern,
-    FunctionPattern(PATTERN_LIST, flask_restless_view, first_word),
+    FunctionPattern(PATTERN_LIST[0], flask_restless_view, first_word),
     Pattern('ping', pong),
     Pattern('help', help_text),
     DefaultPattern(say_help)

@@ -1,6 +1,6 @@
 '''Simple CLI to manual testing, experimenting and understanding of talker classes
 type:
-#python3 cliapp.py 
+#python3 cliapp.py
 To simply go trough yout rules dict and test your configurations
 #python3 cliapp.py json
 To test your configured CLI through a Restful API
