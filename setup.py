@@ -4,8 +4,8 @@ from setuptools import find_packages, setup
 import os
 
 setup(
-    name='dicttalk',
-    description='A Input Command for Bottery',
+    name='bdicttalk',
+    description='A Dict Talker that maps sequences of words to real actions. Bottery enabled.',
     version='0.0.1',
     url='https://github.com/IvanBrasilico',
     license='MIT',
@@ -18,7 +18,7 @@ setup(
     tests_require=['pytest'],
     test_suite="tests",
     package_data={
-        'botteryext/dicttalk': ['/locale/*'],
+        'botteryext/bdicttalk': ['/locale/*'],
     },
     extras_require={
         'dev': [
